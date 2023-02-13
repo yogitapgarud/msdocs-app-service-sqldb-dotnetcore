@@ -58,6 +58,10 @@ namespace DotNetCoreSqlDb
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Todos}/{action=Index}/{id?}");
+
+                endpoints.MapControllerRoute(
+                    name: "Restaurants",
+                    pattern: "{controller=Restaurants}/{action=Index}/{id?}");
             });
         }
     }
