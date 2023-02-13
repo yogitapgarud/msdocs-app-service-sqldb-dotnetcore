@@ -18,7 +18,7 @@ namespace DotNetCoreSqlDb.Controllers
             _context = context;
         }
 
-        // GET: Todos
+        // GET: Restaurants
         public async Task<IActionResult> Index()
         {
             var restaurants = new List<Restaurant>();
@@ -55,7 +55,7 @@ namespace DotNetCoreSqlDb.Controllers
             return View(restaurant);
         }
 
-        // GET: Todos/Create
+        // GET: Restaurants/Create
         public IActionResult Create()
         {
             return View();
